@@ -25,3 +25,11 @@ func (m Matrix) String() string {
 	}
 	return rep
 }
+
+func (m *Matrix) Set(row int, col int, value int) {
+	m.m[row][col] = value
+}
+
+func (m Matrix) Get(row int, col int) int {
+	return m.m[row][col]
+}
